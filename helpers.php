@@ -30,6 +30,32 @@
   */
 
   function loadPartial($name){
-   require basePath("views/partials/{$name}.php");
+      require basePath("views/partials/{$name}.php");
+   }
+
+   /**
+  * Inspect
+  *
+  * @param string $name
+  * @return void
+  */
+   function inspect($name){
+      echo '<pre>';
+      var_dump($name);
+      echo '</pre>';
+   }
+
+   /**
+  * Inspect
+  *
+  * @param string $name
+  * @return void
+  */
+  function inspectAndDie($name){
+   echo '<pre>';
+   die(var_dump($name));
+   echo '</pre>';
 }
+
+
 ?>
