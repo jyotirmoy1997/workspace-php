@@ -1,4 +1,8 @@
 <?php
+
+    namespace Framework;
+    
+
     class Router{
         protected $routes = [];
         public function registerRoute($method, $uri, $controller){

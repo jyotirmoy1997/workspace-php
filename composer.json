@@ -1,0 +1,16 @@
+{
+    "name" : "jyotirmoy1997/workspace-php",
+    "description": "Job listing application",
+    "authors": [
+        {
+            "name": "Jyotirmoy Das",
+            "email" : "subhodas45036@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\" : "Framework/",
+            "App\\" : "App/"
+        }
+    }
+}
