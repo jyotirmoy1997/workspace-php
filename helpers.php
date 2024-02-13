@@ -18,7 +18,8 @@
   * @return void
   */
 
-  function loadView($name){
+  function loadView($name, $data = []){
+      extract($data);
       require basePath("views/{$name}.view.php");
   }
 
