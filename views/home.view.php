@@ -3,7 +3,6 @@
 <?php loadPartial('showcase-search');  ?>
 <?php loadPartial('top-banner');  ?>
 
-<!-- <?php inspect($listings); ?> -->
 
 
 
