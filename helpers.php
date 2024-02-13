@@ -20,7 +20,7 @@
 
   function loadView($name, $data = []){
       extract($data);
-      require basePath("views/{$name}.view.php");
+      require basePath("App/views/{$name}.view.php");
   }
 
   /**
@@ -31,7 +31,7 @@
   */
 
   function loadPartial($name){
-      require basePath("views/partials/{$name}.php");
+      require basePath("App/views/partials/{$name}.php");
    }
 
    /**
