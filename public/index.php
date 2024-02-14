@@ -5,13 +5,6 @@
     use Framework\Router;
     use Framework\Database;
 
-    // Custom Autoloader
-    // spl_autoload_register(function ($class){
-    //     $path = basePath("Framework/{$class}.php");
-    //     if(file_exists($path)){
-    //         require $path;
-    //     }
-    // });
 
     $config = require basePath('config/db.php');
 

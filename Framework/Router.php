@@ -1,6 +1,8 @@
 <?php
 
     namespace Framework;
+
+    use App\Controllers\ErrorController;
     
 
     class Router{
@@ -87,7 +89,7 @@
                     return;
                 }
             }
-            loadView('errors/404');
+            ErrorController::notFound();
         }
 
     }
