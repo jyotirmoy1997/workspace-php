@@ -1,8 +1,8 @@
 <?php
 
-    $router->get('/workspace/public/', 'controllers/home.php');
-    $router->get('/workspace/public/listings', 'controllers/listings/index.php');
-    $router->get('/workspace/public/listings/create', 'controllers/listings/create.php');
-    $router->get('/workspace/public/listing/', 'controllers/listings/show.php');
+    $router->get('/workspace/public/', 'HomeController@index');
+    $router->get('/workspace/public/listings', 'ListingController@index');
+    $router->get('/workspace/public/listings/create', 'ListingController@create');
+    $router->get('/workspace/public/listing/', 'ListingController@show');
 
 ?>
