@@ -53,10 +53,14 @@
   * @return void
   */
   function inspectAndDie($name){
-   echo '<pre>';
-   die(var_dump($name));
-   echo '</pre>';
-}
+      echo '<pre>';
+      die(var_dump($name));
+      echo '</pre>';
+   }
+
+   function sanitize($dirty){
+      return filter_var(trim($dirty), FILTER_SANITIZE_SPECIAL_CHARS);
+   }
 
 
 ?>
